@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Tic Tac Toe</li>
+        </ul>
+    </nav>
+    <div class="gamecontaner">
+        <div class="contaner">
+            <div class="box br-t br-l" onclick="alto(1)" id="1"><span class="boxtext1"></span></div>
+            <div class="box br-t" onclick="alto(2)" id="2"><span class="boxtext2"></span></div>
+            <div class="box br-r br-t" onclick="alto(3)"id="3"><span class="boxtext3"></span></div>
+            <div class="box br-l" onclick="alto(4)"id="4"><span class="boxtext4"></span></div>
+            <div class="box " onclick="alto(5)"id="5"><span class="boxtext5"></span></div>
+            <div class="box br-r" onclick="alto(6)"id="6"><span class="boxtext6"></span></div>
+            <div class="box br-b br-l"onclick="alto(7)"id="7"><span class="boxtext7"></span></div>
+            <div class="box br-b"onclick="alto(8)"id="8"><span class="boxtext8"></span></div>
+            <div class="box br-b br-r"onclick="alto(9)"id="9"><span class="boxtext9"></span></div>
+        </div> 
+        <div class="maininfo">
+            <h1>Welcome to Tic Toe Toe</h1>
+            <div>
+                <span class="info">Turn for X </span>
+                <button id="reset" onclick="window.location.reload()">Reset</button>
+            </div>
+            <div class="imgbox">
+                <img src="done.gif" id='img_done'alt="">
+                <h1 id="done_massage"><span id="wier_o" style="color:red;">o</span><span id="wier_x" style="color:red;">x</span> is winner</h1>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scrip.js"></script>
+</html>
